@@ -1,0 +1,17 @@
+@Materi: Variabel dan Pemrograman Dasar
+@Judul: Praktikum 1 Materi
+@Hari/Tanggal: Minggu, 20210926
+@NIM: 065002100001
+@author: Eka Alidya
+"""
+
+print("hayyyy")
+print("hitunglah luas ruangan")
+
+a = float(input("panjang ruangan ="))
+b = float(input("lebar ruangan ="))
+
+e = input ("tuliskan satuan (meter/inci)")
+f = a*b
+
+print("hasil dari luas dengan panjang", a, "dan lebar", b, "adalah=", a*b)
