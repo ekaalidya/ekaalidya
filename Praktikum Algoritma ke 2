@@ -1,0 +1,30 @@
+@Materi: operasi aritmatika pada pyton
+@Judul: praktikum 2
+@Hari/tanggal: Senin, 27 September 2021
+@Nim: 065002100001
+@Nama: Eka Alidya
+"""
+
+a = float(input("nilai a ="))
+b = float(input("nilai b ="))
+
+count1 = a + b
+print("nilai a ditambah  nilai b =", count1)
+
+count2 = a - b
+print("nilai a dikurang nilai b =, count2")
+
+count3 = a * b
+print("nilai a dikali nilai b = ", count3)
+
+count4 = a % b
+print("sisa pembagian nilai a dengan nilai b =", count4)
+
+count5 = a / b
+print("nilai a dibagi nilai b =", count5)
+
+from math import log10
+print("log basis 10 dari nilai", a, "=", log10(a))
+
+count7 = a ** b
+print("nilai a pangkat nilai b =", count7)
