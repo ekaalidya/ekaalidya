@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct  3 13:13:34 2021
+
+@author: Asus
+nama: Eka Alidya
+nim: 065002100001
+hari/tanggal: minggu, 3 oktober 2021
+"""
+
+import math 
+
+print("hari ini kita akan menghitung jarak antara dua titik")
+L1 = float(input("lattitude kota ke satu="))
+T1 = float(input("longitude kota ke satu="))
+L2 = float(input("Lattitude kota ke dua="))
+T2 = float(input("Longitude kota ke dua="))
+
+T = (T2-T1)
+L = (L2-L1)
+
+a = math.sin(T/2)**2 + math.cos(L1) * math.cos(L2) + math.sin(L/2)**2
+c = 2 * math.atan(math.sqrt(a))
+r = 6371
+
+d = r * c
+print("jarak antara dua titik =",d , "kilometer")
