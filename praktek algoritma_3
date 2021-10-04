@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct  4 13:15:51 2021
+
+@author: Asus
+@Materi: control structure
+@Judul: praktikum 3
+@Hari/tanggal: Senin, 4 Oktober 2021
+@Nim: 065002100001
+@Nama: Eka Alidya
+"""
+
+
+print("tentukan jenis segitiga")
+S1 = int(input("panjang sisi ke 1 ="))
+S2 = int(input("panjang sisi ke 2 ="))
+S3 = int(input("panjang sisi ke 3 ="))
+
+
+if(S1==S2==S3):
+   print("merupakan segitiga sama sisi")
+elif((S1 + S2 <= S3) or (S1 + S3 <= S2) or (S2 + S3 <= S1)):
+     print("bukan merupakan segitiga ")
+elif(S1 == S2 or S2 == S3 or S3 == S1):
+    print("merupakan segitiga sama kaki")
+else:
+    print("merupakan segitiga sembarang")
