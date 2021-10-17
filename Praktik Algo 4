@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 17 21:49:31 2021
+
+@author: Asus
+Nama : Eka Alidya
+Nim :065002100001
+judul :Struktur Kendali II
+"""
+
+print("Menentukan jumlah hari dalamm suatu bulan")
+print('Ketik -1 untuk menghentikan program')
+
+T = True
+while T == True:
+    B = int(input('Ketik bulan ke 1 sampai 12= '))
+    if B > 12 or B <= -2 or B == 0:
+        print('Nilai yang dimasukkan tidak Valid: ', B, '')
+    elif B == 1 or B == 3 or B == 5 or B == 7 or B == 8 or B == 10 or B == 12:
+        print('Bulan ini memiliki 31 hari')
+        print('Ketik -1 untuk menghentikan program')
+    elif B == 2:
+        tahun = int(input('Masukkan tahun= '))
+        if (tahun % 4 == 0 and B == 2):
+             print('Bulan ini memiliki 29 hari')
+             print('Ketik -1 untuk menghentikan program')
+        else:
+            print('Bulan ini memiliki 28 hari')
+            print('Ketik -1 untuk menghentikan program')
+    elif B == 4 or B == 6 or B == 9 or B == 11:
+        print('Bulan ini memiliki 30 hari')
+        print('Ketik -1 untuk menghentikan program')
+        
+    elif B == -1:
+        F = False
+        print('Terima kasih telah menggunakan program ini')
