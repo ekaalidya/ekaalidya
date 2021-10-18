@@ -1,0 +1,41 @@
+print("program fungsi untuk merata-ratakan nilai")
+
+skor = 0    
+nilaimurid = list()
+ulang = 0
+nomor = 0
+
+while ulang == 0:
+    nomor += 1
+    r = str(input('"selesai" untuk mengakhiri!\masukan nilai : ')) 
+    if r == 'selesai': 
+        ulang = 1
+    else: 
+        if r == 'A': 
+            skor = float(4.00)
+        elif r == 'A-':
+            skor = float(3.75)
+        elif r == 'B+':
+            skor = float(3.50)
+        elif r == 'B':
+            skor = float(3.00)
+        elif r== 'B-':
+            skor = float(2.75)
+        elif r == 'C+':
+            skor = float(2.50)
+        elif r == 'C':
+            skor = float(2.00)
+        elif r == 'C-':
+            skor = float(1.75)
+        elif r == 'D':
+            skor = float(1.50)
+        elif r == 'E':
+            skor = float(1.25)
+        else:
+            print('Saya tidak mengerti...')
+            skor = 0
+        print(('\nNilai ke-{0} = {1}').format(nomor,skor))
+        nilaimurid.append(skor)
+    
+rata2 = sum(nilaimurid) / len(nilaimurid)
+print('rata rata nilai murid tersebut:', rata2)
