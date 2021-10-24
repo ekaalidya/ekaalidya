@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 10 20:40:50 2021
+
+@author: Asus
+@Judul: praktikum 3
+@Hari/tanggal: Minggu, 10 Oktober 2021
+@Nim: 065002100001
+@Nama: Eka Alidya 
+"""
+
+import math 
+
+a1 = float(input("angka kesatu = "))
+a2 = float(input("angka kedua = "))
+a3 = float(input("angka ketiga = "))
+
+if a1 == 0 : 
+    print("bukan merupakan persamaan kuadrat")
+    
+else:
+    rumus = float(a2 ** 2) - (4 * a1 * a3)
+    
+    if rumus > 0 :
+        e1 = (-a2 + math.sqrt(rumus)) / (2*a1)
+        e2 = (-a2 + math.sqrt(rumus)) / (2*a1)
+        print("merupakan akar berbeda")
+        print("maka persamaan kuadratnya adalah",e1,"dan",e2)
+        print("dengan determinan",rumus,)
+        
+    elif rumus == 0 :
+        e1 = (-a2 ) / (2*a1)
+        e2 = (-a2 ) / (2*a1)
+        print("merupakan akar kembar")
+        print("maka persamaan kuadratnya adalah",e1,"dan",e2)
+        print("dengan determinan",rumus,)
+        
+    elif rumus < 0 :
+       print("Merupakan Akar Imaginer")
+       print(f"Akar e1 = -{a2} + Akar {rumus} / {a2} * {a1}")
+       print(f"Akar e2 = -{a2} - Akar {rumus} / {a2} * {a1}")
