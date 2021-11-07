@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Nov  7 17:13:01 2021
+
+@author : Eka Alidya
+@nim    : 065002100001
+@materi : Fungsi (Function) pada Pemrograman Python
+@tanggal: 7 November 2021
+"""
+
+hitung = 0
+jawab = "iyaa!"
+
+
+while(jawab == "iyaa!"):
+    inputbulan = int(input("masukan bulan: "))
+    inputtahun = int(input("masukan tahun: "))
+    jawab = str(input("iyaa! or tidak: "))
+        
+    def hitung_bulan():
+    
+      if(inputbulan >= 13 or inputbulan <= 0):
+          print("bulan tidak ditemukan")
+          
+      elif(inputbulan == 1 or inputbulan == 3 or inputbulan == 5 or inputbulan == 7 or inputbulan == 8 or inputbulan == 10 or inputbulan == 12):
+    	     print("31 hari")
+         
+      elif (inputbulan == 2):
+      
+        if(inputtahun % 4 == 0 and inputbulan == 2):
+          print("29 hari")
+          return
+        
+        else :
+            print("28 hari ")
+            
+      else:
+          print("30 hari")
+        
+          
+    hitung_bulan()
