@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  8 15:01:58 2021
+
+@author: Eka Alidya
+@nim: 06500210001
+@tanggal/hari: senin, 8 November 2021
+@materi: fungsi
+"""
+
+def bilangan(bil):
+    if bil == 1:
+        print(f"bilangan {bil} termasuk bilangan prima")
+    elif bil == 2:
+        print(f"bilangan {bil} termasuk bilangan prima")
+    else:
+        global z 
+        for z in range(2, bil):
+            if bil%z==0:
+                stat = 0 
+                break
+            else:
+                stat = 1 
+        cekstat(stat)
+        
+def cekstat(stat):
+    if stat == 0:
+        print(f"bilangan {bil} termasuk bilangan non prima")
+        print(f"{z} X {bil//z} = {bil}")
+    else:
+        print(f"{bil} termasuk bilangan prima")
+
+y = 1
+while y == 1:                    
+    bil = int(input("masukkan angka: "))
+    bilangan(bil)    
+    break             
+bil = int(input("masukkan angka: "))
+bilangan(bil)
