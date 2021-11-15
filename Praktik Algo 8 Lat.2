@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Nov 14 19:28:16 2021
+
+@author: Eka Alidya
+@nim: 065002100001
+@Tanggal: 14 November 2021
+@materi: Fungsi
+"""
+
+angka = ""
+
+def ceknomor(x):
+    while angka !=0:
+        if (angka == 1):
+            return str(angka)+"st"
+        if (angka == 2):
+            return str(angka)+"nd"
+        if (angka == 3):
+            return str (angka)+"rd"
+        if angka in range(4,21):
+            return str(angka)+"th"
+        if (angka == 11):
+            return str (angka)+"st"
+        if (angka == 22):
+            return str (angka)+"nd"
+        if (angka == 33):
+            return str (angka)+"rd"
+        else:
+            print("error")
+    else:
+        print("error")
+            
+angka = int(input("masukkan nomor = "))
+print(ceknomor(angka))
