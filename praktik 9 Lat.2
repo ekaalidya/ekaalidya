@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov 20 22:54:47 2021
+
+@author: Eka Alidya
+@Nim   : 065002100001
+@materi: fungsi rekursif
+@hari/tanggal: Sabtu, 20 November 2021
+"""
+
+x = int(input("masukkan angkanya: "))
+y = int(input("masukkan pangkatnya: "))
+
+def pangkat(x,y):
+    if y>=1:
+        return x* pangkat(x, y-1)
+    return x
+
+hasil = pangkat(x,y)
+print(f"hasilnya adalah: {hasil} ")
