@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 26 10:11:35 2021
+
+@author : Eka Alidya
+@nim    : 065002100001
+@materi : File Handling 
+@tanggal: 26 November 2021
+"""
+
+def edit():
+    biodata = open("biodata.txt",'w')
+    biodata.write(str())
+    biodata.close
+    
+N = str(input("masukkan nama: "))
+U = str(input("masukkan usia: "))
+A = str(input("masukkan alamat: "))
+E = str(input("masukkan email: "))
+D = str(input("masukkan nama wali dosen: "))
+
+def hasil():
+    
+    baca = open("biodata.txt",'r')
+    text = baca.read()
+    print(text)
+    baca.close()
+    
+print("ini adalah data kamu: ")
+print(N)
+print(U)
+print(A)
+print(E)
+print(D)
