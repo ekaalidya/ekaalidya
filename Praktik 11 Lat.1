@@ -1,0 +1,53 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 29 13:47:02 2021
+
+@author: Eka Alidya
+@nim   : 065002100001
+@materi: Search, List & Sorting
+@hari/tanggal: Senin, 29 November 2021
+"""
+
+def bubbleSort(himpunan):
+    n = len(himpunan)
+ 
+    for i in range(n):
+ 
+        for j in range(0, n-i-1):
+ 
+            if himpunan[j] > himpunan[j+1] :
+                himpunan[j], himpunan[j+1] = himpunan[j+1], himpunan[j]
+                
+def binarySearch(himpunan, l, r, x):
+ 
+    # Check base case
+    if r >= l:
+ 
+        mid = l + (r - l) // 2
+ 
+        if himpunan[mid] == x:
+            return mid
+ 
+        elif himpunan[mid] > x:
+            return binarySearch(himpunan, l, mid-1, x)
+ 
+        else:
+            return binarySearch(himpunan, mid + 1, r, x)
+ 
+    else:
+        return -1
+
+himpunan = [14, 4, 8, 12, 84, 32, 64, 89, 42]
+x = input("masukkan angka yang dicari: ")
+x = int(x)
+
+bubbleSort(himpunan)
+
+result = binarySearch(himpunan, 0, len(himpunan)-1, x)
+result = int(result)
+print("Diurutkan menjadi:", himpunan)
+
+if result != -1:
+    print("terdapat di ", (result)+1)
+else:
+    print("tidak ditemukan")
