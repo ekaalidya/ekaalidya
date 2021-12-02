@@ -1,0 +1,67 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Dec  2 23:42:19 2021
+
+@author : Eka Alidya
+@nim    : 065002100001
+@materi :File Handling
+@tanggal:kamis, 2 Desember 2021
+"""
+
+perulangan = 0
+while(perulangan == 0 ):
+
+ print("\n Program File Handling " )
+
+ print("\n1.Membuat dan Menulis")
+ print("2.Membuka")
+ print("3.Menambahkan Text Pada")
+ print("4.Keluar Dari Program")
+
+ pilihan = int(input("\nPilih Program (1/2/3/4) : "))
+
+
+ if pilihan == 1 :
+
+     file = str(input("masukkan filenya: "))
+     nama = str(input("masukkan nama: "))
+     nim = int(input("masukkan nim: "))
+     angkatan = int(input("angkatan ke: "))
+
+     nama_file = open(f'{file}','w')
+     nama_file.write(str(-1))
+     nama_file.close()
+     print("file berhasil dibuat")
+
+ elif pilihan == 2 :
+
+     A = str(input("masukkan nama folder : "))
+     
+     nama_file = open(f'{file}','r')
+     nama_file.read()
+     nama_file.close()
+
+     print("\nnama kamu: ",nama)
+     print("nim kamu: ",nim)
+     print("angkatan kamu: ",angkatan)
+
+
+ elif pilihan == 3 :
+
+     U = str(input("masukan nama file : "))
+
+     pilihan1 = str(input("masukkan nama sahabat kamu : "))
+     catatan = str(input("masukkan catatan tambahan kamu : "))
+
+     nama_file = open(f'{file}',"a")
+     nama_file.write()
+     nama_file.close()
+
+     print("nama sahabat mu adalah : ",pilihan1)
+     print("catatan tambahan nya yaitu : ",catatan)
+     print("\n catatan berhasil dibuat ")
+
+ elif pilihan == 4 :
+
+     print("Terima Kasih Telah Menggunakan Program")
+ break
