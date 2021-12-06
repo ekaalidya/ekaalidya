@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec  6 14:08:05 2021
+
+@author: Eka Alidya
+@nim   : 065002100001
+@materi: Object Oriented Programming pada Python
+@hari/tanggal: Senin, 6 Desember 2021
+"""
+
+class mahasiswi:
+    
+   def __init__(self,nama, nim, angkatan):
+        
+        self.nama = nama
+        self.nim = nim
+        self.angkatan = angkatan
+        
+   def biodata_mahasiswi(self):
+       print("\nnama kamu adalah : ",self.nama)
+       print("nim kamu : ",self.nim)
+       print("kamu angkatan ke: ",self.angkatan)
+       
+nama = str(input("masukkan nama kamu : "))
+nim = str(input("masukkan nim kamu : "))
+angkatan = str(input("masukkan angkatan kamu: "))
+
+biodata = mahasiswi(nama, nim , angkatan)
+biodata.biodata_mahasiswi()
