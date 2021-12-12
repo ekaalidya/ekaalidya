@@ -1,0 +1,73 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Dec 12 20:41:33 2021
+
+@author: Eka Alidya
+@nim   : 065002100001
+@materi: Object Oriented Programming pada Python
+@hari/tanggal : minggu, 12 Desember 2021
+"""
+
+class mahasiswi:
+    
+    def __init__(self, nama, nilai):
+        
+        self.nama = nama
+        self.nilai = nilai
+        
+    def ubah(self): 
+        
+        print("nama Kamu adalah : " + self.nama)
+        print("nilainya : " + str(self.nilai))
+       
+perulangan = 0 
+
+while perulangan == 0 :
+    
+    print("==== Program OOP ==== ")
+    print("1.Mendeklarasikan Objek")
+    print("2.Menampilkan Objek")
+    print("3.Mengganti Objek")
+    print("4.Menghapus Objek")
+    print("5.Menutup Program")
+    
+    pilihan = int(input("masukkan angka yang ingin kamu pilih (1/2/3/4/5):  "))
+    
+    if pilihan == 1 :
+        
+        nama = str(input("masukkan nama Kamu : "))
+        nilai = str(input("masukkan nilai Kamu : "))
+        biodata = mahasiswi(nama, nilai)
+        print("data berhasil dicantumkan")
+        
+    elif pilihan == 2 :
+        
+        biodata = mahasiswi(nama, nilai)
+        biodata.ubah()
+        
+    elif pilihan == 3 :
+        
+        x ="nama"
+        y ="nilai"
+        
+        perubahan = input("biodata yang ingin diubah (nama/nilai) : ")
+        
+        if(perubahan == x):
+            
+            nama = input("masukkan nama kamu :")
+            print("data berhasil diubah")
+            
+        elif(perubahan == y):
+            
+            nilai = input("masukkan nilaimu :")
+            print("data berhasil diubah")
+            
+    elif pilihan == 4 :
+        
+        nama = "nama tidak ada"
+        nilai = "nilai tidak ada"
+        print("data berhasil dihapus")
+        
+    elif pilihan == 5 :
+        print("terima kasih telah menggunakan program ini")
+        break
