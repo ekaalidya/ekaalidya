@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Dec 17 14:36:36 2021
+
+@author: Eka Alidya
+@nim   : 065002100001
+@mater : Pengantar Data Sciencei:
+@hari/tanggal: Jumat, 17 Desember 2021
+"""
+
+import pandas as pd
+
+data = {'Negara': ['Indonesia', 'Jepang', 'India', 'China', 'Amerika Serikat', 'Brazil', 'Rusia', 'Meksiko', 'Nigeria', 'Jerman', 'Aljazair', 'Inggris'],
+        'Ibu Kota': ['Jakarta', 'Tokyo', 'New Delhi', 'Beijing', 'Washington, D.C.', 'Brazilia', 'Moskow', 'Meksiko City', 'Abuja', 'Berlin', 'Aljazair', 'London'],
+        'Benua': ['Asia', 'Asia', 'Asia', 'Asia', 'Amerika', 'Amerika', 'Asia', 'Amerika', 'Afrika', 'Eropa', 'Afrika', 'Eropa'],
+        'Luas': [1905, 377, 3287, 9597, 9834, 8515, 17098, 1964, 923, 357, 2381, 242],
+        'Populasi': [264, 143, 1252, 1357, 329, 210, 146, 126, 200, 83, 43, 66]}
+
+df = pd.DataFrame(data)
+mean = df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+
+print('ini adalah data framenya: ')
+print(df)
+print('')
+print('ini adalah data mean: ')
+print(mean)
+print('')
+print('ini adalah data standard deviation: ')
+print(std)
+print('')
